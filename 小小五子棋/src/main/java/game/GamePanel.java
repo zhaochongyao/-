@@ -73,9 +73,9 @@ public class GamePanel extends JPanel {
 
     private void init(){                        //按钮组件和成员变量初始化
         gameGoing = false;
-        background = Toolkit.getDefaultToolkit().getImage("image\\background.jpg");    //图片初始化
-        image1 = Toolkit.getDefaultToolkit().getImage("image\\image1.jpg");
-        image2 = Toolkit.getDefaultToolkit().getImage("image\\image2.jpg");
+        background = Toolkit.getDefaultToolkit().getImage("src/main/java/image/background.jpg");    //图片初始化
+        image1 = Toolkit.getDefaultToolkit().getImage("src/main/java/image/image1.jpg");
+        image2 = Toolkit.getDefaultToolkit().getImage("src/main/java/image/image2.jpg");
         client = new GameClient();
         listener = new MyActionListener(client,this);
         setSize(1000,800);
